@@ -3,6 +3,7 @@ package main
 import (
 	"example.com/greetings"
 	"fmt"
+	"golang.org/x/example/hello/reverse"
 	"log"
 )
 
@@ -17,4 +18,5 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println(messages)
+	fmt.Println(reverse.String("Hello"), reverse.Int(1234))
 }
